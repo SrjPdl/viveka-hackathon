@@ -20,7 +20,7 @@ def get_error_info(err: str, err_detail: sys) -> str:
 
 
     """
-    _, _, tb = sys.exc_info()
+    _, _, tb = err_detail.exc_info()
     exception_file = tb.tb_frame.f_code.co_filename
     exception_line = tb.tb_lineno
     exception_info = f"{err} in {exception_file} at line {exception_line}"

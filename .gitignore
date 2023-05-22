@@ -12,6 +12,8 @@ __pycache__/
 #log files
 logs/
 
+#artifact files
+artifacts/
 
 # Distribution / packaging
 .Python
