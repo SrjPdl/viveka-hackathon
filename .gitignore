@@ -9,6 +9,10 @@ __pycache__/
 #vscode
 .vscode/
 
+#log files
+logs/
+
+
 # Distribution / packaging
 .Python
 build/

@@ -1,14 +1,14 @@
 from setuptools import setup, find_packages  
 from typing import List
 
-def get_requirements(filename:  str)-> List[str]:
+def get_requirements(filename:str)-> List[str]:
     
     """
     Reads a file containing requirements and returns a list of requirements.\\
     Args:
-        filename (str): The name of the file containing requirements.
+        filename : The name of the file containing requirements.
     Returns:
-        List[str]: A list of requirements extracted from the file.
+        A list of requirements extracted from the file.
     Raises:
         FileNotFoundError: If the specified file does not exist.
         IOError: If there is an error reading the file.
