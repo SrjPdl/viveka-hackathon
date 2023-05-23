@@ -2,4 +2,9 @@ numpy
 pandas
 matplotlib
 paramiko
+torch
+torchvision 
+torchaudio
+scikit-image
+lxml
 -e .

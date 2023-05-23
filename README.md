@@ -1,1 +1,2 @@
 # Viveka AI Hackathon
+This project aims to detect frogeris in the news documents. The project is based on the [FRAUD DETECTION CONTEST : FIND IT !](http://findit.univ-lr.fr/). The project is a part of the Viveka AI Hackathon.
