@@ -31,7 +31,7 @@ class DataConfig:
     TRAIN_DATA_XML_FILE: str = os.path.join(os.getcwd(), "artifacts/train_data/T1-train/GT/T1-GT.xml")
     TEST_DATA_XML_FILE: str = os.path.join(os.getcwd(), "artifacts/test_data/FindIt-Dataset-Test/T1-Test-GT.xml")
     DATA_RESIZE: int = 299
-    BATCH_SIZE: int = 128
+    BATCH_SIZE: int = 32
 
 class FrogeryDataset(Dataset):
     """Custom dataset for frogery data.
@@ -92,7 +92,7 @@ class DataLoadTransform:
     """
     def __init__(self):
         self.config = DataConfig()
-        self.transform = torchvision.transforms.Compose([Rescale(self.config.DATA_RESIZE), ToTensor()])
+        self.transform = torchvision.transforms.Compose([Rescale((self.config.DATA_RESIZE, self.config.DATA_RESIZE)), ToTensor()])
     
     def get_train_loader(self):
         """Get a data loader for the training dataset.
