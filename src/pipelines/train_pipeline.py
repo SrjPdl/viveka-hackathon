@@ -21,8 +21,8 @@ class ModelConfig:
 
 
 if __name__ == "__main__":
-    # data_ingestion = DataIngestion()
-    # data_ingestion.initiate_data_ingestion()
+    data_ingestion = DataIngestion()
+    data_ingestion.initiate_data_ingestion()
     data_loader = DataLoadTransform()
     train_loader = data_loader.get_train_loader()
     test_loader = data_loader.get_test_loader()
