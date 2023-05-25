@@ -8,7 +8,7 @@ git clone https://github.com/SrjPdl/viveka-hackathon.git
 ```
 - Create a virtual environment using anaconda or python venv
 ```bash
-conda create -n env python=3.7
+conda create -n env python=3.9
 ```
 ```bash
 python3 -m venv env
@@ -27,4 +27,13 @@ pip install -r requirements.txt
 - Train the model
 ```bash
 python3 src/pipelines/train_pipeline.py
+```
+- Run the web app
+```bash
+cd src/app
+uvicorn main:app --reload
+```
+- Open the web app in the browser and go to url for the docs and test the API
+```url
+http://127.0.0.1:8000/docs 
 ```
